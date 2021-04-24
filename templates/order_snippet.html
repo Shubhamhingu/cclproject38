@@ -29,7 +29,7 @@
     </ul>
 
     {% if DISPLAY_COUPON_FORM %}
-    <form class="card p-2" action="{% url 'core:add-coupon' %}" method="POST">
+    <!--<form class="card p-2" action="{% url 'core:add-coupon' %}" method="POST">
         {% csrf_token %}
         <div class="input-group">
             {{ couponform.code }}
@@ -37,7 +37,7 @@
             <button class="btn btn-secondary btn-md waves-effect m-0" type="submit">Redeem</button>
             </div>
         </div>
-    </form>
+    </form>  -->
     {% endif %}
 
 </div>
