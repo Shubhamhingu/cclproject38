@@ -15,8 +15,8 @@
             <form class="signup" id="signup_form" method="POST" action="/accounts/signup/">
               <input type="hidden" name="csrfmiddlewaretoken" value="ITd4XohkGmPVpfVayUPk17YDGtQ9ISrkAiBdF5E7HIBDAkwlbpHWQdqqQoeznWH7">
               
-
-<div id="div_id_username" class="form-group"> <label for="id_username" class="col-form-label  requiredField">
+{% csrf_token %}
+                <div id="div_id_username" class="form-group"> <label for="id_username" class="col-form-label  requiredField">
                 Username<span class="asteriskField">*</span> </label> <div class=""> <input type="text" name="username" placeholder="Username" autofocus="autofocus" minlength="1" maxlength="150" class="textinput textInput form-control" required id="id_username"> </div> </div> <div id="div_id_email" class="form-group"> </div> <div id="div_id_password1" class="form-group"> <label for="id_password1" class="col-form-label  requiredField">
                 Password<span class="asteriskField">*</span> </label> <div class=""> <input type="password" name="password1" placeholder="Password" class="textinput textInput form-control" required id="id_password1"> </div> </div> <div id="div_id_password2" class="form-group"> <label for="id_password2" class="col-form-label  requiredField">
                 Password (again)<span class="asteriskField">*</span> </label> <div class=""> <input type="password" name="password2" placeholder="Password (again)" class="textinput textInput form-control" required id="id_password2"> </div> </div>
